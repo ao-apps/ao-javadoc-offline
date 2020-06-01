@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ao-javadoc-offline - A bundle of Javadoc element-list and package-list files supporting offline builds.
+Copyright (C) 2020  AO Industries, Inc.
+    support@aoindustries.com
+    7262 Bull Pen Cir
+    Mobile, AL 36695
+
+This file is part of ao-javadoc-offline.
+
+ao-javadoc-offline is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+ao-javadoc-offline is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.aoindustries</groupId><artifactId>ao-oss-parent</artifactId><version>1.9.1-SNAPSHOT</version>
+		<relativePath>../ao-oss-parent/pom.xml</relativePath>
+	</parent>
+
+	<groupId>com.aoindustries</groupId><artifactId>ao-javadoc-offline</artifactId><version>1.0.0-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+
+	<name>AO Javadoc Offline</name>
+	<url>https://aoindustries.com/ao-javadoc-offline/</url>
+	<description>A bundle of Javadoc element-list and package-list files supporting offline builds.</description>
+	<inceptionYear>2020</inceptionYear>
+
+	<scm>
+		<connection>scm:git:git://github.com/aoindustries/ao-javadoc-offline.git</connection>
+		<developerConnection>scm:git:git@github.com:aoindustries/ao-javadoc-offline.git</developerConnection>
+		<url>https://github.com/aoindustries/ao-javadoc-offline</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/aoindustries/ao-javadoc-offline/issues</url>
+	</issueManagement>
+</project>

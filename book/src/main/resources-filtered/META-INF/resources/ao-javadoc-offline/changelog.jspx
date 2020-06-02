@@ -54,6 +54,9 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>New project for Javadoc element-list and package-list files supporting offline builds.</li>
+					<!-- TODO: This package could use the "Project" class to dynamically find the version currently deployed -->
+					<!-- TODO: This package could also allow the registration of additional packages, perhaps via "Service" mechanism -->
+					<!-- TODO: Additional API Links might be by project in this case, too, including package-list/element-list -->
 				</ul>
 			</changelog:release>
 		</c:if>

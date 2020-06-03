@@ -30,7 +30,7 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 	</parent>
 
 	<groupId>com.aoindustries</groupId><artifactId>ao-javadoc-offline</artifactId><version>1.0.0-SNAPSHOT</version>
-	<packaging>bundle</packaging>
+	<packaging>jar<!-- "bundle" doesn't work with maven-remote-resources-plugin due to the way it obtains resources.  TODO: worth fixing?  Switch ao-javadoc-resources to jar, and other non-Java projects? --></packaging>
 
 	<name>AO Javadoc Offline</name>
 	<url>https://aoindustries.com/ao-javadoc-offline/</url>
@@ -48,4 +48,23 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 		<system>GitHub Issues</system>
 		<url>https://github.com/aoindustries/ao-javadoc-offline/issues</url>
 	</issueManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-remote-resources-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>bundle.offlinkLinks</id><phase>generate-sources</phase><goals><goal>bundle</goal></goals>
+					</execution>
+				</executions>
+				<configuration>
+					<includes>
+						<include>**/element-list</include><!-- Java >= 10 -->
+						<include>**/package-list</include><!-- Java <= 9 -->
+					</includes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

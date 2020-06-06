@@ -43,7 +43,7 @@ This bundle fills-in this gap by including:
 We were unable to find any existing implementations via
 [GitHub](https://github.com/search?utf8=%E2%9C%93&q=java+apidocs&type=Repositories&ref=searchresults),
 [The Central Repository](https://search.maven.org/search?q=apidocs),
-or [Google Search](https://www.google.com/search?q=q=java+offline+"package-list"+bundle).
+or [Google Search](https://www.google.com/search?q=q=java+offline+%22package-list%22+bundle).
 
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):

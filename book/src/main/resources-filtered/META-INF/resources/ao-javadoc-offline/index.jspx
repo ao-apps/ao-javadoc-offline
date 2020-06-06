@@ -71,7 +71,7 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 				We were unable to find any existing implementations via
 				<ao:a href="https://github.com/search?utf8=%E2%9C%93&amp;q=java+apidocs&amp;type=Repositories&amp;ref=searchresults">GitHub</ao:a>,
 				<ao:a href="https://search.maven.org/search?q=apidocs">The Central Repository</ao:a>,
-				or <ao:a href="https://www.google.com/search?q=q=java+offline+%22package-list%22+bundle">Google Search</ao:a>.
+				or <ao:a href="https://www.google.com/search?q=java+offline+%22package-list%22+bundle">Google Search</ao:a>.
 			</p>
 		</section:aside>
 	</core:page>

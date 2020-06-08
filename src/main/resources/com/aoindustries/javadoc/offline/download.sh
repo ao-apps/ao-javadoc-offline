@@ -30,7 +30,7 @@ cd "${BASH_SOURCE%/*}"
 #
 
 # Note: This list matches ao-oss-parent/pom.xml
-rm javase/*/* -f
+rm javase/*/*
 curl -f -o javase/5/package-list  https://docs.oracle.com/javase/1.5.0/docs/api/package-list
 curl -f -o javase/6/package-list  https://docs.oracle.com/javase/6/docs/api/package-list
 curl -f -o javase/7/package-list  https://docs.oracle.com/javase/7/docs/api/package-list
@@ -48,8 +48,8 @@ curl -f -o javase/15/element-list https://download.java.net/java/early_access/jd
 #
 
 # Note: This list matches ao-oss-parent/pom.xml
-rm com.sun.mail/javax.mail/* -f
-rm javaee/*/* -f
+rm com.sun.mail/javax.mail/*
+rm javaee/*/*
 curl -f -o com.sun.mail/javax.mail/package-list https://javaee.github.io/javamail/docs/api/package-list
 curl -f -o javaee/5/package-list https://docs.oracle.com/javaee/5/api/package-list
 curl -f -o javaee/6/package-list https://docs.oracle.com/javaee/6/api/package-list
@@ -60,17 +60,17 @@ curl -f -o javaee/8/package-list https://javaee.github.io/javaee-spec/javadocs/p
 # Other APIs
 #
 
-rm com.sendmail/jilter/* -f
+rm com.sendmail/jilter/*
 curl -f -o com.sendmail/jilter/package-list http://sendmail-jilter.sourceforge.net/apidocs/package-list
 
-rm com.servlets/cos/* -f
+rm com.servlets/cos/*
 curl -f -o com.servlets/cos/package-list http://www.servlets.com/cos/javadoc/package-list
 
-rm commons-httpclient/commons-httpclient/* -f
+rm commons-httpclient/commons-httpclient/*
 curl -f -o commons-httpclient/commons-httpclient/package-list https://hc.apache.org/httpclient-3.x/apidocs/package-list
 
-rm org.apache.axis/axis/* -f
+rm org.apache.axis/axis/*
 curl -f -o org.apache.axis/axis/package-list https://axis.apache.org/axis/java/apiDocs/package-list
 
-rm org.ostermiller/utils/* -f
+rm org.ostermiller/utils/*
 curl -f -o org.ostermiller/utils/package-list https://ostermiller.org/utils/doc/package-list

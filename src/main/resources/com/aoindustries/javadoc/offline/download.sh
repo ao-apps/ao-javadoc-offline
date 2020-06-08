@@ -60,7 +60,7 @@ curl -f -o javaee/8/package-list https://javaee.github.io/javaee-spec/javadocs/p
 # Other APIs
 #
 
-rm com.sendmail/jilter/* -rf
+rm com.sendmail/jilter/* -f
 curl -f -o com.sendmail/jilter/package-list http://sendmail-jilter.sourceforge.net/apidocs/package-list
 
 rm com.servlets/cos/* -f

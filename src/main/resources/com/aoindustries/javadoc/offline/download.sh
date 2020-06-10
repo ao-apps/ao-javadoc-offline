@@ -25,40 +25,10 @@
 set -e
 cd "${BASH_SOURCE%/*}"
 
-#
-# Java SE
-#
-
+##########
+# Direct #
+##########
 # Note: This list matches ao-oss-parent/pom.xml
-rm javase/*/*
-curl -f -o javase/5/package-list  https://docs.oracle.com/javase/1.5.0/docs/api/package-list
-curl -f -o javase/6/package-list  https://docs.oracle.com/javase/6/docs/api/package-list
-curl -f -o javase/7/package-list  https://docs.oracle.com/javase/7/docs/api/package-list
-curl -f -o javase/8/package-list  https://docs.oracle.com/javase/8/docs/api/package-list
-curl -f -o javase/9/package-list  https://docs.oracle.com/javase/9/docs/api/package-list
-curl -f -o javase/10/element-list https://docs.oracle.com/javase/10/docs/api/element-list
-curl -f -o javase/11/element-list https://docs.oracle.com/en/java/javase/11/docs/api/element-list
-curl -f -o javase/12/element-list https://docs.oracle.com/en/java/javase/12/docs/api/element-list
-curl -f -o javase/13/element-list https://docs.oracle.com/en/java/javase/13/docs/api/element-list
-curl -f -o javase/14/element-list https://docs.oracle.com/en/java/javase/14/docs/api/element-list
-curl -f -o javase/15/element-list https://download.java.net/java/early_access/jdk15/docs/api/element-list
-
-#
-# Java EE
-#
-
-# Note: This list matches ao-oss-parent/pom.xml
-rm com.sun.mail/javax.mail/*
-rm javaee/*/*
-curl -f -o com.sun.mail/javax.mail/package-list https://javaee.github.io/javamail/docs/api/package-list
-curl -f -o javaee/5/package-list https://docs.oracle.com/javaee/5/api/package-list
-curl -f -o javaee/6/package-list https://docs.oracle.com/javaee/6/api/package-list
-curl -f -o javaee/7/package-list https://docs.oracle.com/javaee/7/api/package-list
-curl -f -o javaee/8/package-list https://javaee.github.io/javaee-spec/javadocs/package-list
-
-#
-# Other APIs
-#
 
 rm com.sendmail/jilter/*
 curl -f -o com.sendmail/jilter/package-list http://sendmail-jilter.sourceforge.net/apidocs/package-list
@@ -72,5 +42,38 @@ curl -f -o commons-httpclient/commons-httpclient/package-list https://hc.apache.
 rm org.apache.axis/axis/*
 curl -f -o org.apache.axis/axis/package-list https://axis.apache.org/axis/java/apiDocs/package-list
 
+rm com.sun.mail/javax.mail/*
+curl -f -o com.sun.mail/javax.mail/package-list https://javaee.github.io/javamail/docs/api/package-list
+
 rm org.ostermiller/utils/*
 curl -f -o org.ostermiller/utils/package-list https://ostermiller.org/utils/doc/package-list
+
+
+###########
+# Java SE #
+###########
+# Note: This list matches ao-oss-parent/pom.xml
+
+rm javase/*/*
+curl -f -o javase/5/package-list  https://docs.oracle.com/javase/1.5.0/docs/api/package-list
+curl -f -o javase/6/package-list  https://docs.oracle.com/javase/6/docs/api/package-list
+curl -f -o javase/7/package-list  https://docs.oracle.com/javase/7/docs/api/package-list
+curl -f -o javase/8/package-list  https://docs.oracle.com/javase/8/docs/api/package-list
+curl -f -o javase/9/package-list  https://docs.oracle.com/javase/9/docs/api/package-list
+curl -f -o javase/10/element-list https://docs.oracle.com/javase/10/docs/api/element-list
+curl -f -o javase/11/element-list https://docs.oracle.com/en/java/javase/11/docs/api/element-list
+curl -f -o javase/12/element-list https://docs.oracle.com/en/java/javase/12/docs/api/element-list
+curl -f -o javase/13/element-list https://docs.oracle.com/en/java/javase/13/docs/api/element-list
+curl -f -o javase/14/element-list https://docs.oracle.com/en/java/javase/14/docs/api/element-list
+curl -f -o javase/15/element-list https://download.java.net/java/early_access/jdk15/docs/api/element-list
+
+###########
+# Java EE #
+###########
+# Note: This list matches ao-oss-parent/pom.xml
+
+rm javaee/*/*
+curl -f -o javaee/5/package-list https://docs.oracle.com/javaee/5/api/package-list
+curl -f -o javaee/6/package-list https://docs.oracle.com/javaee/6/api/package-list
+curl -f -o javaee/7/package-list https://docs.oracle.com/javaee/7/api/package-list
+curl -f -o javaee/8/package-list https://javaee.github.io/javaee-spec/javadocs/package-list

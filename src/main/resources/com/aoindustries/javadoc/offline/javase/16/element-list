@@ -223,7 +223,8 @@ com.sun.net.httpserver
 com.sun.net.httpserver.spi
 module:jdk.incubator.foreign
 jdk.incubator.foreign
-module:jdk.incubator.jpackage
+module:jdk.incubator.vector
+jdk.incubator.vector
 module:jdk.jartool
 com.sun.jarsigner
 jdk.security.jarsigner
@@ -244,6 +245,7 @@ module:jdk.jfr
 jdk.jfr
 jdk.jfr.consumer
 module:jdk.jlink
+module:jdk.jpackage
 module:jdk.jshell
 jdk.jshell
 jdk.jshell.execution
@@ -265,10 +267,6 @@ jdk.net
 jdk.nio
 module:jdk.nio.mapmode
 jdk.nio.mapmode
-module:jdk.rmic
-module:jdk.scripting.nashorn
-jdk.nashorn.api.scripting
-jdk.nashorn.api.tree
 module:jdk.sctp
 com.sun.nio.sctp
 module:jdk.security.auth

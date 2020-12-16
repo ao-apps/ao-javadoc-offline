@@ -37,7 +37,7 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2020-06-01T11:09:48-05:00"
-		dateModified="2020-11-17T12:31:23-06:00"
+		dateModified="2020-12-15T22:39:10-06:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -47,6 +47,13 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
 			>
+				<ul>
+					<li>
+						Removed offline Javadocs for <code>com.servlets:cos</code>, since we have eradicated it from all projects in favor of
+						<ao:a rel="nofollow" href="@{javadoc.link.javaee}javax/servlet/http/HttpServletRequest.html#getParts()">the standard file upload API</ao:a>
+						and <ao:a href="https://javaee.github.io/javamail/">JavaMail</ao:a>.
+					</li>
+				</ul>
 				<!-- TODO: This package could use the "Project" class to dynamically find the version currently deployed -->
 				<!-- TODO: This package could also allow the registration of additional packages, perhaps via "Service" mechanism -->
 				<!-- TODO: Additional API Links might be by project in this case, too, including package-list/element-list -->
@@ -69,7 +76,7 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 						<li>Java 16 is new beta</li>
 					</ol>
 				</li>
-				</ul>
+			</ul>
 		</changelog:release>
 
 		<changelog:release

@@ -33,9 +33,6 @@ cd "${BASH_SOURCE%/*}"
 rm com.sendmail/jilter/*
 curl -f -o com.sendmail/jilter/package-list http://sendmail-jilter.sourceforge.net/apidocs/package-list
 
-rm com.servlets/cos/*
-curl -f -o com.servlets/cos/package-list http://www.servlets.com/cos/javadoc/package-list
-
 rm commons-httpclient/commons-httpclient/*
 curl -f -o commons-httpclient/commons-httpclient/package-list https://hc.apache.org/httpclient-3.x/apidocs/package-list
 

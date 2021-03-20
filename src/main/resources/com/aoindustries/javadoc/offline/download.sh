@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # ao-javadoc-offline - A bundle of Javadoc element-list and package-list files supporting offline builds.
-# Copyright (C) 2020  AO Industries, Inc.
+# Copyright (C) 2020, 2021  AO Industries, Inc.
 #     support@aoindustries.com
 #     7262 Bull Pen Cir
 #     Mobile, AL 36695
@@ -34,7 +34,7 @@ rm com.sendmail/jilter/*
 curl -f -o com.sendmail/jilter/package-list http://sendmail-jilter.sourceforge.net/apidocs/package-list
 
 rm commons-httpclient/commons-httpclient/*
-curl -f -o commons-httpclient/commons-httpclient/package-list https://hc.apache.org/httpclient-3.x/apidocs/package-list
+curl -f -o commons-httpclient/commons-httpclient/package-list https://hc.apache.org/httpclient-legacy/apidocs/package-list
 
 rm org.apache.axis/axis/*
 curl -f -o org.apache.axis/axis/package-list https://axis.apache.org/axis/java/apiDocs/package-list
@@ -63,7 +63,8 @@ curl -f -o javase/12/element-list https://docs.oracle.com/en/java/javase/12/docs
 curl -f -o javase/13/element-list https://docs.oracle.com/en/java/javase/13/docs/api/element-list
 curl -f -o javase/14/element-list https://docs.oracle.com/en/java/javase/14/docs/api/element-list
 curl -f -o javase/15/element-list https://docs.oracle.com/en/java/javase/15/docs/api/element-list
-curl -f -o javase/16/element-list https://download.java.net/java/early_access/jdk16/docs/api/element-list
+curl -f -o javase/16/element-list https://docs.oracle.com/en/java/javase/16/docs/api/element-list
+curl -f -o javase/17/element-list https://download.java.net/java/early_access/jdk17/docs/api/element-list
 
 ###########
 # Java EE #

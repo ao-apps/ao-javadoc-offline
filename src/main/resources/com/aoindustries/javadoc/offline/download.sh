@@ -75,4 +75,6 @@ rm javaee/*/*
 curl -f -o javaee/5/package-list https://docs.oracle.com/javaee/5/api/package-list
 curl -f -o javaee/6/package-list https://docs.oracle.com/javaee/6/api/package-list
 curl -f -o javaee/7/package-list https://docs.oracle.com/javaee/7/api/package-list
-curl -f -o javaee/8/package-list https://javaee.github.io/javaee-spec/javadocs/package-list
+curl -f -o javaee/8/package-list https://jakarta.ee/specifications/platform/8/apidocs/package-list
+curl -f -o javaee/9/package-list https://jakarta.ee/specifications/platform/9/apidocs/package-list
+curl -f -o javaee/9.1/package-list https://jakarta.ee/specifications/platform/9.1/apidocs/package-list

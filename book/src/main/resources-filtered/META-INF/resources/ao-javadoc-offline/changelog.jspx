@@ -37,7 +37,7 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2020-06-01T11:09:48-05:00"
-		dateModified="2021-03-20T10:10:50-05:00"
+		dateModified="2021-05-22T13:07:02-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -50,6 +50,15 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 				<!-- TODO: This package could use the "Project" class to dynamically find the version currently deployed -->
 				<!-- TODO: This package could also allow the registration of additional packages, perhaps via "Service" mechanism -->
 				<!-- TODO: Additional API Links might be by project in this case, too, including package-list/element-list -->
+				<ul>
+					<li>Java™ EE updates:
+						<ol>
+							<li>Updated apidocs URL for <ao:a href="https://jakarta.ee/specifications/platform/8/apidocs/">Jakarta EE 8</ao:a></li>
+							<li>Added <ao:a href="https://jakarta.ee/specifications/platform/9/apidocs/">Jakarta EE 9</ao:a></li>
+							<li>Added <ao:a href="https://jakarta.ee/specifications/platform/9.1/apidocs/">Jakarta EE 9.1</ao:a></li>
+						</ol>
+					</li>
+				</ul>
 			</changelog:release>
 		</c:if>
 

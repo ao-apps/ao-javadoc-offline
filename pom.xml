@@ -33,12 +33,7 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>bundle</packaging>
 
 	<properties>
-		<!-- Java 1.8 -->
-		<javase.version>1.8</javase.version>
-		<javase.release>8</javase.release>
-		<javadoc.link.javase>${javadoc.link.javase.8}</javadoc.link.javase>
-		<!-- This must be set in your ~/.m2/settings.xml when building with JDK < 9 -->
-		<javase.bootclasspath>${javase.bootclasspath.8}</javase.bootclasspath>
+		<module.name>com.aoapps.javadoc.offline</module.name>
 	</properties>
 
 	<name>AO Javadoc Offline</name>
@@ -82,6 +77,13 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 	</issueManagement>
 
 	<build>
+		<!--
+			module-info.java moved to src/main/java-11, since chicken-and-egg issue activated in parent when
+			src/main/java is present.  The parent adds ao-javadoc-offline as a plugin dependency.  This, in-turn,
+			will attempt to fetch the dependency, not using this version from the reactor build.  This may cause the
+			build to fail when switching to a new version of ao-javadoc-offline.
+		-->
+		<sourceDirectory>src/main/java-11</sourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-remote-resources-plugin</artifactId>

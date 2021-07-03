@@ -37,7 +37,7 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2020-06-01T11:09:48-05:00"
-		dateModified="2021-06-27T16:13:41-05:00"
+		dateModified="2021-07-03T15:29:55-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -51,20 +51,30 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 				<!-- TODO: This package could use the "Project" class to dynamically find the version currently deployed -->
 				<!-- TODO: This package could also allow the registration of additional packages, perhaps via "Service" mechanism -->
 				<!-- TODO: Additional API Links might be by project in this case, too, including package-list/element-list -->
-				<ul>
-					<li>Java™ EE updates:
-						<ol>
-							<li>Updated apidocs URL for <ao:a href="https://jakarta.ee/specifications/platform/8/apidocs/">Jakarta EE 8</ao:a></li>
-							<li>Added <ao:a href="https://jakarta.ee/specifications/platform/9/apidocs/">Jakarta EE 9</ao:a></li>
-							<li>Added <ao:a href="https://jakarta.ee/specifications/platform/9.1/apidocs/">Jakarta EE 9.1</ao:a></li>
-						</ol>
-					</li>
-					<li>Now supports Java 9+ modules with included <code>module-info.class</code>.</li>
-					<li>Maven artifact relocated from <code>com.aoindustries:ao-javadoc-offline</code> to <code>com.aoapps:ao-javadoc-offline</code>.</li>
-					<li>Package renamed from <code>com.aoindustries.javadoc.offline</code> to <code>com.aoapps.javadoc.offline</code>.</li>
-				</ul>
 			</changelog:release>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="3.0.0"
+			datePublished="2021-07-03T15:29:55-05:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>Java™ EE updates:
+					<ol>
+						<li>Updated apidocs URL for <ao:a href="https://jakarta.ee/specifications/platform/8/apidocs/">Jakarta EE 8</ao:a></li>
+						<li>Added <ao:a href="https://jakarta.ee/specifications/platform/9/apidocs/">Jakarta EE 9</ao:a></li>
+						<li>Added <ao:a href="https://jakarta.ee/specifications/platform/9.1/apidocs/">Jakarta EE 9.1</ao:a></li>
+					</ol>
+				</li>
+				<li>Now supports Java 9+ modules with included <code>module-info.class</code>.</li>
+				<li>Maven artifact relocated from <code>com.aoindustries:ao-javadoc-offline</code> to <code>com.aoapps:ao-javadoc-offline</code>.</li>
+				<li>Package renamed from <code>com.aoindustries.javadoc.offline</code> to <code>com.aoapps.javadoc.offline</code>.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"

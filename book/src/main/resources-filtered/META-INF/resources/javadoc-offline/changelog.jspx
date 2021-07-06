@@ -45,7 +45,7 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 				version="@{project.version}"
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
-				repository="https://s01.oss.sonatype.org/content/repositories/snapshots/"
+				repository="@{nexusUrl}content/repositories/snapshots/"
 				scmUrl="@{project.scm.url}"
 			>
 				<!-- TODO: This package could use the "Project" class to dynamically find the version currently deployed -->

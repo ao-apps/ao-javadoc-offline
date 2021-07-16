@@ -8,6 +8,11 @@
 
 [![Build](https://github.com/aoindustries/ao-javadoc-offline/workflows/Build/badge.svg?branch=master)](https://github.com/aoindustries/ao-javadoc-offline/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-javadoc-offline/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-javadoc-offline)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-javadoc-offline&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=com.aoapps%3Aao-javadoc-offline)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-javadoc-offline&metric=ncloc)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-javadoc-offline&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-javadoc-offline&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-javadoc-offline&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-javadoc-offline&metric=security_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-javadoc-offline&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-javadoc-offline&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-javadoc-offline&metric=Maintainability)
 
 A bundle of Javadoc element-list and package-list files supporting offline builds.
 

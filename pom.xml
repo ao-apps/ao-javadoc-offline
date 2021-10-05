@@ -36,7 +36,7 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 		<module.name>com.aoapps.javadoc.offline</module.name>
 		<!-- SonarQube -->
 		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
-		<sonar.organization>aoindustries</sonar.organization>
+		<sonar.organization>ao-apps</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
@@ -69,20 +69,20 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/aoindustries/ao-javadoc-offline.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/ao-javadoc-offline.git</developerConnection>
-		<url>https://github.com/aoindustries/ao-javadoc-offline</url>
+		<connection>scm:git:git://github.com/ao-apps/ao-javadoc-offline.git</connection>
+		<developerConnection>scm:git:git@github.com:ao-apps/ao-javadoc-offline.git</developerConnection>
+		<url>https://github.com/ao-apps/ao-javadoc-offline</url>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/aoindustries/ao-javadoc-offline/issues</url>
+		<url>https://github.com/ao-apps/ao-javadoc-offline/issues</url>
 	</issueManagement>
 
 	<ciManagement>
 		<system>GitHub Actions</system>
-		<url>https://github.com/aoindustries/ao-javadoc-offline/actions</url>
+		<url>https://github.com/ao-apps/ao-javadoc-offline/actions</url>
 	</ciManagement>
 
 	<repositories>

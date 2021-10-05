@@ -1,4 +1,4 @@
-# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/aoindustries) [AO OSS](https://github.com/aoindustries/ao-oss) / [Javadoc Offline](https://github.com/aoindustries/ao-javadoc-offline)
+# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/ao-apps) [AO OSS](https://github.com/ao-apps/ao-oss) / [Javadoc Offline](https://github.com/ao-apps/ao-javadoc-offline)
 
 [![project: current stable](https://oss.aoapps.com/ao-badges/project-current-stable.svg)](https://aoindustries.com/life-cycle#project-current-stable)
 [![management: production](https://oss.aoapps.com/ao-badges/management-production.svg)](https://aoindustries.com/life-cycle#management-production)
@@ -6,7 +6,7 @@
 [![semantic versioning: 2.0.0](https://oss.aoapps.com/ao-badges/semver-2.0.0.svg)](http://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://oss.aoapps.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
-[![Build](https://github.com/aoindustries/ao-javadoc-offline/workflows/Build/badge.svg?branch=master)](https://github.com/aoindustries/ao-javadoc-offline/actions?query=workflow%3ABuild)
+[![Build](https://github.com/ao-apps/ao-javadoc-offline/workflows/Build/badge.svg?branch=master)](https://github.com/ao-apps/ao-javadoc-offline/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-javadoc-offline/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.aoapps/ao-javadoc-offline)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-javadoc-offline&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=com.aoapps%3Aao-javadoc-offline)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.aoapps%3Aao-javadoc-offline&metric=ncloc)](https://sonarcloud.io/component_measures?branch=master&id=com.aoapps%3Aao-javadoc-offline&metric=ncloc)  
@@ -20,7 +20,7 @@ A bundle of Javadoc element-list and package-list files supporting offline build
 * [Project Home](https://oss.aoapps.com/javadoc-offline/)
 * [Changelog](https://oss.aoapps.com/javadoc-offline/changelog)
 * [Maven Central Repository](https://search.maven.org/artifact/com.aoapps/ao-javadoc-offline)
-* [GitHub](https://github.com/aoindustries/ao-javadoc-offline)
+* [GitHub](https://github.com/ao-apps/ao-javadoc-offline)
 
 ## Motivation
 We desire the speed and reliability of `javadoc -linkoffline` on all projects.

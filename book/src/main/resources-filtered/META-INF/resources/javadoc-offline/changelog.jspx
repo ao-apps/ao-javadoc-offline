@@ -37,7 +37,7 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2020-06-01T11:09:48-05:00"
-		dateModified="2021-07-03T15:29:55-05:00"
+		dateModified="2021-10-16T09:30:18-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -51,6 +51,15 @@ along with ao-javadoc-offline.  If not, see <http://www.gnu.org/licenses />.
 				<!-- TODO: This package could use the "Project" class to dynamically find the version currently deployed -->
 				<!-- TODO: This package could also allow the registration of additional packages, perhaps via "Service" mechanism -->
 				<!-- TODO: Additional API Links might be by project in this case, too, including package-list/element-list -->
+				<ul>
+					<li>Java updates:
+						<ol>
+							<li>Java 16 is now end-of-life</li>
+							<li>Java 17 is now current stable</li>
+							<li>Java 18 is new beta</li>
+						</ol>
+					</li>
+				</ul>
 			</changelog:release>
 		</c:if>
 

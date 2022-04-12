@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # ao-javadoc-offline - A bundle of Javadoc element-list and package-list files supporting offline builds.
-# Copyright (C) 2020, 2021  AO Industries, Inc.
+# Copyright (C) 2020, 2021, 2022  AO Industries, Inc.
 #     support@aoindustries.com
 #     7262 Bull Pen Cir
 #     Mobile, AL 36695
@@ -65,7 +65,8 @@ curl -f -o javase/14/element-list https://docs.oracle.com/en/java/javase/14/docs
 curl -f -o javase/15/element-list https://docs.oracle.com/en/java/javase/15/docs/api/element-list
 curl -f -o javase/16/element-list https://docs.oracle.com/en/java/javase/16/docs/api/element-list
 curl -f -o javase/17/element-list https://docs.oracle.com/en/java/javase/17/docs/api/element-list
-curl -f -o javase/18/element-list https://download.java.net/java/early_access/jdk18/docs/api/element-list
+curl -f -o javase/18/element-list https://docs.oracle.com/en/java/javase/18/docs/api/element-list
+curl -f -o javase/19/element-list https://download.java.net/java/early_access/jdk19/docs/api/element-list
 
 ###########
 # Java EE #

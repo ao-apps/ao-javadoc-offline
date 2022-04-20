@@ -22,153 +22,153 @@ You should have received a copy of the GNU Lesser General Public License
 along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <jsp:root
-	xmlns:ao="https://oss.aoapps.com/taglib/"
-	xmlns:c="http://java.sun.com/jsp/jstl/core"
-	xmlns:changelog="https://semanticcms.com/changelog/taglib/"
-	xmlns:core="https://semanticcms.com/core/taglib/"
-	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
-	xmlns:jsp="http://java.sun.com/JSP/Page"
-	version="2.1"
+  xmlns:ao="https://oss.aoapps.com/taglib/"
+  xmlns:c="http://java.sun.com/jsp/jstl/core"
+  xmlns:changelog="https://semanticcms.com/changelog/taglib/"
+  xmlns:core="https://semanticcms.com/core/taglib/"
+  xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+  version="2.1"
 >
-	<jsp:directive.page language="java" pageEncoding="UTF-8" />
-	<jsp:directive.page session="false" />
-	<core:page
-		title="@{documented.name} Changelog"
-		shortTitle="Changelog"
-		tocLevels="1"
-		datePublished="2020-06-01T11:09:48-05:00"
-		dateModified="2022-04-11T21:07:41-05:00"
-	>
-		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
-			<changelog:release
-				projectName="@{documented.name}"
-				version="@{project.version}"
-				groupId="@{project.groupId}"
-				artifactId="@{documented.artifactId}"
-				repository="@{nexusUrl}content/repositories/snapshots/"
-				scmUrl="@{project.scm.url}"
-			>
-				<!-- TODO: This package could use the "Project" class to dynamically find the version currently deployed -->
-				<!-- TODO: This package could also allow the registration of additional packages, perhaps via "Service" mechanism -->
-				<!-- TODO: Additional API Links might be by project in this case, too, including package-list/element-list -->
-				<ul>
-					<li>Java updates:
-						<ol>
-							<li>Java 18 is now current stable</li>
-							<li>Java 19 is new beta</li>
-						</ol>
-					</li>
-				</ul>
-			</changelog:release>
-		</c:if>
+  <jsp:directive.page language="java" pageEncoding="UTF-8" />
+  <jsp:directive.page session="false" />
+  <core:page
+    title="@{documented.name} Changelog"
+    shortTitle="Changelog"
+    tocLevels="1"
+    datePublished="2020-06-01T11:09:48-05:00"
+    dateModified="2022-04-11T21:07:41-05:00"
+  >
+    <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
+      <changelog:release
+        projectName="@{documented.name}"
+        version="@{project.version}"
+        groupId="@{project.groupId}"
+        artifactId="@{documented.artifactId}"
+        repository="@{nexusUrl}content/repositories/snapshots/"
+        scmUrl="@{project.scm.url}"
+      >
+        <!-- TODO: This package could use the "Project" class to dynamically find the version currently deployed -->
+        <!-- TODO: This package could also allow the registration of additional packages, perhaps via "Service" mechanism -->
+        <!-- TODO: Additional API Links might be by project in this case, too, including package-list/element-list -->
+        <ul>
+          <li>Java updates:
+            <ol>
+              <li>Java 18 is now current stable</li>
+              <li>Java 19 is new beta</li>
+            </ol>
+          </li>
+        </ul>
+      </changelog:release>
+    </c:if>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="3.0.1"
-			datePublished="2021-10-16T17:56:46-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Java updates:
-					<ol>
-						<li>Java 16 is now end-of-life</li>
-						<li>Java 17 is now current stable</li>
-						<li>Java 18 is new beta</li>
-					</ol>
-				</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="3.0.1"
+      datePublished="2021-10-16T17:56:46-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Java updates:
+          <ol>
+            <li>Java 16 is now end-of-life</li>
+            <li>Java 17 is now current stable</li>
+            <li>Java 18 is new beta</li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="3.0.0"
-			datePublished="2021-07-03T15:29:55-05:00"
-			groupId="@{project.groupId}"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Java™ EE updates:
-					<ol>
-						<li>Updated apidocs URL for <ao:a href="https://jakarta.ee/specifications/platform/8/apidocs/">Jakarta EE 8</ao:a></li>
-						<li>Added <ao:a href="https://jakarta.ee/specifications/platform/9/apidocs/">Jakarta EE 9</ao:a></li>
-						<li>Added <ao:a href="https://jakarta.ee/specifications/platform/9.1/apidocs/">Jakarta EE 9.1</ao:a></li>
-					</ol>
-				</li>
-				<li>Now supports Java 9+ modules with included <code>module-info.class</code>.</li>
-				<li>Maven artifact relocated from <code>com.aoindustries:ao-javadoc-offline</code> to <code>com.aoapps:ao-javadoc-offline</code>.</li>
-				<li>Package renamed from <code>com.aoindustries.javadoc.offline</code> to <code>com.aoapps.javadoc.offline</code>.</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="3.0.0"
+      datePublished="2021-07-03T15:29:55-05:00"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Java™ EE updates:
+          <ol>
+            <li>Updated apidocs URL for <ao:a href="https://jakarta.ee/specifications/platform/8/apidocs/">Jakarta EE 8</ao:a></li>
+            <li>Added <ao:a href="https://jakarta.ee/specifications/platform/9/apidocs/">Jakarta EE 9</ao:a></li>
+            <li>Added <ao:a href="https://jakarta.ee/specifications/platform/9.1/apidocs/">Jakarta EE 9.1</ao:a></li>
+          </ol>
+        </li>
+        <li>Now supports Java 9+ modules with included <code>module-info.class</code>.</li>
+        <li>Maven artifact relocated from <code>com.aoindustries:ao-javadoc-offline</code> to <code>com.aoapps:ao-javadoc-offline</code>.</li>
+        <li>Package renamed from <code>com.aoindustries.javadoc.offline</code> to <code>com.aoapps.javadoc.offline</code>.</li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="2.0.1"
-			datePublished="2021-03-20T10:10:50-05:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Java updates:
-					<ol>
-						<li>Java 15 is now end-of-life</li>
-						<li>Java 16 is now current stable</li>
-						<li>Java 17 is new beta</li>
-					</ol>
-				</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="2.0.1"
+      datePublished="2021-03-20T10:10:50-05:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Java updates:
+          <ol>
+            <li>Java 15 is now end-of-life</li>
+            <li>Java 16 is now current stable</li>
+            <li>Java 17 is new beta</li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="2.0.0"
-			datePublished="2020-12-16T02:23:08-06:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>
-					Removed offline Javadocs for <code>com.servlets:cos</code>, since we have eradicated it from all projects in favor of
-					<ao:a rel="nofollow" href="@{javadoc.link.javaee}javax/servlet/http/HttpServletRequest.html#getParts()">the standard file upload API</ao:a>
-					and <ao:a href="https://javaee.github.io/javamail/">JavaMail</ao:a>.
-				</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="2.0.0"
+      datePublished="2020-12-16T02:23:08-06:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>
+          Removed offline Javadocs for <code>com.servlets:cos</code>, since we have eradicated it from all projects in favor of
+          <ao:a rel="nofollow" href="@{javadoc.link.javaee}javax/servlet/http/HttpServletRequest.html#getParts()">the standard file upload API</ao:a>
+          and <ao:a href="https://javaee.github.io/javamail/">JavaMail</ao:a>.
+        </li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.1.0"
-			datePublished="2020-11-17T12:31:23-06:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>Java updates:
-					<ol>
-						<li>Java 14 is now end-of-life</li>
-						<li>Java 15 is now current stable</li>
-						<li>Java 16 is new beta</li>
-					</ol>
-				</li>
-			</ul>
-		</changelog:release>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.1.0"
+      datePublished="2020-11-17T12:31:23-06:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Java updates:
+          <ol>
+            <li>Java 14 is now end-of-life</li>
+            <li>Java 15 is now current stable</li>
+            <li>Java 16 is new beta</li>
+          </ol>
+        </li>
+      </ul>
+    </changelog:release>
 
-		<changelog:release
-			projectName="@{documented.name}"
-			version="1.0.0"
-			datePublished="2020-06-11T01:28:12-05:00"
-			groupId="com.aoindustries"
-			artifactId="@{documented.artifactId}"
-			scmUrl="@{project.scm.url}"
-		>
-			<ul>
-				<li>New project for Javadoc element-list and package-list files supporting offline builds.</li>
-			</ul>
-		</changelog:release>
-	</core:page>
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.0.0"
+      datePublished="2020-06-11T01:28:12-05:00"
+      groupId="com.aoindustries"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>New project for Javadoc element-list and package-list files supporting offline builds.</li>
+      </ul>
+    </changelog:release>
+  </core:page>
 </jsp:root>

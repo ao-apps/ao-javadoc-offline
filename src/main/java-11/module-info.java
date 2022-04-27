@@ -1,6 +1,6 @@
 /*
  * ao-javadoc-offline - A bundle of Javadoc element-list and package-list files supporting offline builds.
- * Copyright (C) 2021  AO Industries, Inc.
+ * Copyright (C) 2021, 2022  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -21,4 +21,4 @@
  * along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
  */
 module com.aoapps.javadoc.offline {
-}
+} // TODO: Avoiding rewrite-maven-plugin-4.22.2 truncation

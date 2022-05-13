@@ -21,4 +21,4 @@
  * along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
  */
 module com.aoapps.javadoc.offline {
-} // TODO: Avoiding rewrite-maven-plugin-4.22.2 truncation
+}

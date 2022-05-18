@@ -28,7 +28,7 @@ cd "${BASH_SOURCE%/*}"
 ##########
 # Direct #
 ##########
-# Note: This list matches ao-oss-parent/pom.xml
+# Note: This list matches ao-oss-parent/pom.xml and semanticcms-tag-reference
 
 rm com.sendmail/jilter/*
 curl -f -o com.sendmail/jilter/package-list http://sendmail-jilter.sourceforge.net/apidocs/package-list
@@ -38,6 +38,9 @@ curl -f -o commons-httpclient/commons-httpclient/package-list https://hc.apache.
 
 rm org.apache.axis/axis/*
 curl -f -o org.apache.axis/axis/package-list https://axis.apache.org/axis/java/apiDocs/package-list
+
+rm javax.activation/activation/*
+curl -f -o javax.activation/activation/element-list https://jakarta.ee/specifications/activation/1.2/apidocs/element-list
 
 rm com.sun.mail/javax.mail/*
 curl -f -o com.sun.mail/javax.mail/package-list https://javaee.github.io/javamail/docs/api/package-list
@@ -49,7 +52,7 @@ curl -f -o org.ostermiller/utils/package-list https://ostermiller.org/utils/doc/
 ###########
 # Java SE #
 ###########
-# Note: This list matches ao-oss-parent/pom.xml
+# Note: This list matches ao-oss-parent/pom.xml and semanticcms-tag-reference
 
 rm javase/*/*
 curl -f -o javase/5/package-list  https://docs.oracle.com/javase/1.5.0/docs/api/package-list

@@ -69,7 +69,8 @@ curl -f -o javase/15/element-list https://docs.oracle.com/en/java/javase/15/docs
 curl -f -o javase/16/element-list https://docs.oracle.com/en/java/javase/16/docs/api/element-list
 curl -f -o javase/17/element-list https://docs.oracle.com/en/java/javase/17/docs/api/element-list
 curl -f -o javase/18/element-list https://docs.oracle.com/en/java/javase/18/docs/api/element-list
-curl -f -o javase/19/element-list https://download.java.net/java/early_access/jdk19/docs/api/element-list
+curl -f -o javase/19/element-list https://docs.oracle.com/en/java/javase/19/docs/api/element-list
+curl -f -o javase/20/element-list https://download.java.net/java/early_access/jdk20/docs/api/element-list
 
 ###########
 # Java EE #

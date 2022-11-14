@@ -30,22 +30,22 @@ cd "${BASH_SOURCE%/*}"
 ##########
 # Note: This list matches ao-oss-parent/pom.xml and semanticcms-tag-reference
 
-rm com.sendmail/jilter/*
+rm -f com.sendmail/jilter/*
 curl -f -o com.sendmail/jilter/package-list http://sendmail-jilter.sourceforge.net/apidocs/package-list
 
-rm commons-httpclient/commons-httpclient/*
+rm -f commons-httpclient/commons-httpclient/*
 curl -f -o commons-httpclient/commons-httpclient/package-list https://hc.apache.org/httpclient-legacy/apidocs/package-list
 
-rm org.apache.axis/axis/*
+rm -f org.apache.axis/axis/*
 curl -f -o org.apache.axis/axis/package-list https://axis.apache.org/axis/java/apiDocs/package-list
 
-rm javax.activation/activation/*
+rm -f javax.activation/activation/*
 curl -f -o javax.activation/activation/element-list https://jakarta.ee/specifications/activation/1.2/apidocs/element-list
 
-rm com.sun.mail/javax.mail/*
+rm -f com.sun.mail/javax.mail/*
 curl -f -o com.sun.mail/javax.mail/package-list https://javaee.github.io/javamail/docs/api/package-list
 
-rm org.ostermiller/utils/*
+rm -f org.ostermiller/utils/*
 curl -f -o org.ostermiller/utils/package-list https://ostermiller.org/utils/doc/package-list
 
 
@@ -54,7 +54,7 @@ curl -f -o org.ostermiller/utils/package-list https://ostermiller.org/utils/doc/
 ###########
 # Note: This list matches ao-oss-parent/pom.xml and semanticcms-tag-reference
 
-rm javase/*/*
+rm -f javase/*/*
 curl -f -o javase/5/package-list  https://docs.oracle.com/javase/1.5.0/docs/api/package-list
 curl -f -o javase/6/package-list  https://docs.oracle.com/javase/6/docs/api/package-list
 curl -f -o javase/7/package-list  https://docs.oracle.com/javase/7/docs/api/package-list
@@ -77,10 +77,25 @@ curl -f -o javase/20/element-list https://download.java.net/java/early_access/jd
 ###########
 # Note: This list matches ao-oss-parent/pom.xml
 
-rm javaee/*/*
+rm -f javaee/*/*
+mkdir -p javaee/5
 curl -f -o javaee/5/package-list https://docs.oracle.com/javaee/5/api/package-list
+mkdir -p javaee/6
 curl -f -o javaee/6/package-list https://docs.oracle.com/javaee/6/api/package-list
+mkdir -p javaee/7
 curl -f -o javaee/7/package-list https://docs.oracle.com/javaee/7/api/package-list
-curl -f -o javaee/8/package-list https://jakarta.ee/specifications/platform/8/apidocs/package-list
-curl -f -o javaee/9/package-list https://jakarta.ee/specifications/platform/9/apidocs/package-list
-curl -f -o javaee/9.1/package-list https://jakarta.ee/specifications/platform/9.1/apidocs/package-list
+
+##############
+# Jakarta EE #
+##############
+# Note: This list matches ao-oss-parent/pom.xml
+
+rm -f jakartaee/*/*
+mkdir -p jakartaee/8
+curl -f -o jakartaee/8/package-list https://jakarta.ee/specifications/platform/8/apidocs/package-list
+mkdir -p jakartaee/9
+curl -f -o jakartaee/9/package-list https://jakarta.ee/specifications/platform/9/apidocs/package-list
+mkdir -p jakartaee/9.1
+curl -f -o jakartaee/9.1/package-list https://jakarta.ee/specifications/platform/9.1/apidocs/package-list
+mkdir -p jakartaee/10
+curl -f -o jakartaee/10/element-list https://jakarta.ee/specifications/platform/10/apidocs/element-list

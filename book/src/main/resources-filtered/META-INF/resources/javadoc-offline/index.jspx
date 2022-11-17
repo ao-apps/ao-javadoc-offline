@@ -34,7 +34,7 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
     title="@{documented.name}"
     description="@{documented.description}"
     datePublished="2020-06-01T11:09:48-05:00"
-    dateModified="2021-07-16T03:48:08-05:00"
+    dateModified="2022-11-16T22:50:01-06:00"
   >
     <core:child page="changelog.jspx" />
     <header>
@@ -73,7 +73,7 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
         We desire the speed and reliability of <code>javadoc -linkoffline</code> on all projects.
         Where possible, we unpack the <code>element-list</code> and <code>package-list</code> files from
         apidocs via <code>javadoc</code> secondary artifacts.  However, these secondary artifacts
-        are not available for Java SE, Java EE, many legacy APIs, and occasionally even
+        are not available for Java SE, Java EE, Jakarta EE, many legacy APIs, and occasionally even
         current releases.
       </p>
     </section:section>

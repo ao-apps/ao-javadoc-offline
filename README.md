@@ -26,12 +26,13 @@ A bundle of Javadoc element-list and package-list files supporting offline build
 We desire the speed and reliability of `javadoc -linkoffline` on all projects.
 Where possible, we unpack the `element-list` and `package-list` files from
 apidocs via `javadoc` secondary artifacts.  However, these secondary artifacts
-are not available for Java SE, Java EE, many legacy APIs, and occasionally even
+are not available for Java SE, Java EE, Jakarta EE, many legacy APIs, and occasionally even
 current releases.
 
 This bundle fills-in this gap by including:
 * Java SE (many versions)
 * Java EE (many versions)
+* Jakarta EE (many versions)
 * Legacy APIs (on an as-needed basis)
 * Current APIs (on an as-needed basis)
 

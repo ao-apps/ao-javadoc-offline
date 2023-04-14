@@ -19,7 +19,7 @@ A bundle of Javadoc element-list and package-list files supporting offline build
 ## Project Links
 * [Project Home](https://oss.aoapps.com/javadoc-offline/)
 * [Changelog](https://oss.aoapps.com/javadoc-offline/changelog)
-* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.aoapps&q=a%3Aao-javadoc-offline)
+* [Maven Central Repository](https://central.sonatype.com/artifact/com.aoapps/ao-javadoc-offline)
 * [GitHub](https://github.com/ao-apps/ao-javadoc-offline)
 
 ## Motivation

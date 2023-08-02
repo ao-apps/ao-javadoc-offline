@@ -29,11 +29,11 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId><version>3.4.1-SNAPSHOT</version>
+  <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId><version>3.4.1</version>
   <packaging>bundle</packaging>
 
   <properties>
-    <project.build.outputTimestamp>2023-02-08T21:06:04Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-08-02T17:53:26Z</project.build.outputTimestamp>
     <module.name>com.aoapps.javadoc.offline</module.name>
   </properties>
 
@@ -69,7 +69,7 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/ao-javadoc-offline.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/ao-javadoc-offline.git</developerConnection>
     <url>https://github.com/ao-apps/ao-javadoc-offline</url>
-    <tag>HEAD</tag>
+    <tag>ao-javadoc-offline-3.4.1</tag>
   </scm>
 
   <issueManagement>

@@ -1,6 +1,6 @@
 /*
  * ao-javadoc-offline - A bundle of Javadoc element-list and package-list files supporting offline builds.
- * Copyright (C) 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2021, 2022, 2023  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -20,5 +20,6 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
  */
+// Avoid cyclic dependency: Being in src/main/java-11 (instead of src/main/java) avoids some of the cycles
 module com.aoapps.javadoc.offline {
 }

@@ -25,9 +25,13 @@
 // Parent, Extensions, Plugins, Direct and BOM Dependencies
 def upstreamProjects = [
   // Parent
-  // Avoid cyclic dependency:
-  // TODO: Mutually trigger between ao-oss-parent and ao-javadoc-offline when not triggered by the other
-  // 'parent', // <groupId>com.aoapps</groupId><artifactId>ao-oss-parent</artifactId>
+  'parent', // <groupId>com.aoapps</groupId><artifactId>ao-oss-parent</artifactId>
+  // Parent Plugin Dependencies (Avoid cyclic dependency)
+  'pgp-keys-map', // <groupId>com.aoapps</groupId><artifactId>pgp-keys-map</artifactId>
+  // Avoid cyclic dependency: 'javadoc-offline', // <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId>
+  // Avoid cyclic dependency: 'javadoc-resources', // <groupId>com.aoapps</groupId><artifactId>ao-javadoc-resources</artifactId>
+  // Avoid cyclic dependency: 'ant-tasks', // <groupId>com.aoapps</groupId><artifactId>ao-ant-tasks</artifactId>
+  // Avoid cyclic dependency: 'checkstyle-config', // <groupId>com.aoapps</groupId><artifactId>ao-checkstyle-config</artifactId>
 ]
 
 /******************************************************************************************

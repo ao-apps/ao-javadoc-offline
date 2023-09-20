@@ -37,7 +37,7 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2020-06-01T11:09:48-05:00"
-    dateModified="2023-08-02T17:54:35Z"
+    dateModified="2023-09-20T15:25:22Z"
   >
     <c:set var="latestRelease" value="3.4.1" />
     <c:if test="${
@@ -56,6 +56,9 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
         <!-- TODO: This package could use the "Project" class to dynamically find the version currently deployed -->
         <!-- TODO: This package could also allow the registration of additional packages, perhaps via "Service" mechanism -->
         <!-- TODO: Additional API Links might be by project in this case, too, including package-list/element-list -->
+        <ul>
+          <li>Minimum Java version changed from 1.8 to 11.</li>
+        </ul>
       </changelog:release>
     </c:if>
 

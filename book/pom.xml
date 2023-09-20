@@ -41,9 +41,6 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
     <documented.artifactId>ao-javadoc-offline</documented.artifactId>
     <documented.name>AO Javadoc Offline</documented.name>
     <documented.description>A bundle of Javadoc element-list and package-list files supporting offline builds.</documented.description>
-    <!-- Java 1.8 -->
-    <documented.javase.version>1.8</documented.javase.version>
-    <documented.javadoc.link.javase>${javadoc.link.javase.8}</documented.javadoc.link.javase>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>

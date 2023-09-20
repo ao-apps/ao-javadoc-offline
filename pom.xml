@@ -36,6 +36,8 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
     <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
     <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
     <module.name>com.aoapps.javadoc.offline</module.name>
+    <!-- Java 11 inherited from parent -->
+    <!-- Matches "requireJavaVersion" from ao-oss-parent -->
   </properties>
 
   <name>AO Javadoc Offline</name>

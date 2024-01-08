@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-javadoc-offline - A bundle of Javadoc element-list and package-list files supporting offline builds.
-Copyright (C) 2020, 2021, 2022, 2023  AO Industries, Inc.
+Copyright (C) 2020, 2021, 2022, 2023, 2024  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -29,7 +29,7 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId><version>3.4.1-POST-SNAPSHOT</version>
+  <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId><version>3.5.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <properties>

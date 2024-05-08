@@ -29,12 +29,12 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId><version>3.5.0</version>
+  <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId><version>3.5.0-POST-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <properties>
     <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
-    <project.build.outputTimestamp>2024-05-08T01:50:08Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
     <module.name>com.aoapps.javadoc.offline</module.name>
     <!-- Java 11 inherited from parent -->
     <!-- Matches "requireJavaVersion" from ao-oss-parent -->
@@ -72,7 +72,7 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/ao-javadoc-offline.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/ao-javadoc-offline.git</developerConnection>
     <url>https://github.com/ao-apps/ao-javadoc-offline</url>
-    <tag>ao-javadoc-offline-3.5.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <issueManagement>

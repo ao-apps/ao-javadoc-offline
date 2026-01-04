@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 ao-javadoc-offline - A bundle of Javadoc element-list and package-list files supporting offline builds.
-Copyright (C) 2020, 2021, 2022, 2023, 2024, 2025  AO Industries, Inc.
+Copyright (C) 2020, 2021, 2022, 2023, 2024, 2025, 2026  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -23,10 +23,10 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <jsp:root
   xmlns:ao="https://oss.aoapps.com/taglib/"
-  xmlns:c="http://java.sun.com/jsp/jstl/core"
+  xmlns:c="jakarta.tags.core"
   xmlns:changelog="https://semanticcms.com/changelog/taglib/"
   xmlns:core="https://semanticcms.com/core/taglib/"
-  xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+  xmlns:fn="jakarta.tags.functions"
   xmlns:jsp="http://java.sun.com/JSP/Page"
   version="2.1"
 >
@@ -238,7 +238,7 @@ along with ao-javadoc-offline.  If not, see <https://www.gnu.org/licenses/>.
       <ul>
         <li>
           Removed offline Javadocs for <code>com.servlets:cos</code>, since we have eradicated it from all projects in favor of
-          <ao:a rel="nofollow" href="@{javadoc.link.javaee}javax/servlet/http/HttpServletRequest.html#getParts()">the standard file upload API</ao:a>
+          <ao:a rel="nofollow" href="@{javadoc.link.javaee.7}javax/servlet/http/HttpServletRequest.html#getParts()">the standard file upload API</ao:a>
           and <ao:a href="https://javaee.github.io/javamail/">JavaMail</ao:a>.
         </li>
       </ul>

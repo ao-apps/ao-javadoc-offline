@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # ao-javadoc-offline - A bundle of Javadoc element-list and package-list files supporting offline builds.
-# Copyright (C) 2020, 2021, 2022, 2023, 2024  AO Industries, Inc.
+# Copyright (C) 2020, 2021, 2022, 2023, 2024, 2026  AO Industries, Inc.
 #     support@aoindustries.com
 #     7262 Bull Pen Cir
 #     Mobile, AL 36695
@@ -31,7 +31,7 @@ cd "${BASH_SOURCE%/*}"
 # Note: This list matches ao-oss-parent/pom.xml and semanticcms-tag-reference
 
 rm -f com.sendmail/jilter/*
-curl -f -o com.sendmail/jilter/package-list http://sendmail-jilter.sourceforge.net/apidocs/package-list
+curl -f -o com.sendmail/jilter/package-list https://sendmail-jilter.sourceforge.net/apidocs/package-list
 
 rm -f commons-httpclient/commons-httpclient/*
 curl -f -o commons-httpclient/commons-httpclient/package-list https://hc.apache.org/httpclient-legacy/apidocs/package-list

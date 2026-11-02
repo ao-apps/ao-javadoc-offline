@@ -46,7 +46,7 @@ rm -f com.sun.mail/javax.mail/*
 curl -fsS -o com.sun.mail/javax.mail/package-list https://javaee.github.io/javamail/docs/api/package-list
 
 rm -f org.ostermiller/utils/*
-curl -fsS -o org.ostermiller/utils/package-list https://ostermiller.org/utils/doc/package-list
+curl -fsS -o org.ostermiller/utils/element-list https://utils.ostermiller.org/doc/element-list
 
 
 ###########

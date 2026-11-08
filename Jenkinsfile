@@ -34,6 +34,10 @@ binding.setVariable('upstreamProjects', [
   // Avoid cyclic dependency: 'checkstyle-config', // <groupId>com.aoapps</groupId><artifactId>ao-checkstyle-config</artifactId>
 ])
 
+// This project is used at build-time only and always uses the latest snapshot.
+// This project will not be re-released solely for updated dependency versions.
+binding.setVariable('scmAdditionalAuditBranches', [])
+
 /******************************************************************************************
  *                                                                                        *
  * Everything below this line is identical for all projects, except the copied matrix     *
